@@ -1,25 +1,30 @@
-# Road Quality Detection
+# Signal Processing & Applied Mathematics Toolkit
 
-A C-based system for detecting and analyzing road quality, surface roughness, and anomalies (such as bumps and potholes) using smartphone sensor data.
+A C-based collection of mathematical modules and signal processing utilities designed for scientific computing, sensor data analysis, and digital signal processing (DSP).
 
-## Project Overview
+## Project Scope & Modules
 
-This project processes inertial measurement unit (IMU) and accelerometer data collected from smartphone sensors to assess road surface quality. It includes mathematical utilities for signal processing, feature extraction, and linear algebra operations needed for sensor data analysis.
+This repository serves as a modular toolkit covering key areas of applied mathematics and signal processing:
 
-## Project Structure
+- **Complex Numbers**: Fundamentals of complex arithmetic, polar conversions, phase/argument, and modulus calculations.
+- **Linear Algebra**: Vectors, matrix operations, determinants, and matrix transformations.
+- **Numerical Calculus**: Numerical differentiation methods (finite differences) and integration routines (Trapezoidal, Simpson's rules).
+- **FFT & Signal Processing**: Discrete Fourier Transforms (DFT), Fast Fourier Transforms (FFT), windowing functions, and frequency-domain analysis.
+
+## Repository Structure
 
 ```text
 Road-Quality/
 ├── cmake/               # CMake helper scripts and modules
 ├── docs/                # Documentation
-├── examples/            # Example usages and sample scripts
+├── examples/            # Example scripts and sample implementations
 ├── include/
 │   └── cust/
-│       └── basic.h      # Custom math definitions and complex number primitives
+│       └── basic.h      # Custom math definitions and complex number header
 ├── src/
-│   ├── basic.c          # Complex math and signal processing implementations
+│   ├── basic.c          # Mathematical and complex number implementations
 │   └── main.c           # Application entry point
-├── tests/               # Unit test suite
+├── tests/               # Unit testing framework
 ├── CMakeLists.txt       # CMake build configuration file
 ├── LICENSE              # MIT License
 └── README.md            # Project README
@@ -33,19 +38,19 @@ Road-Quality/
 
 ## Building & Running
 
-### 1. Configure the Project
-Create the build files using CMake:
+### 1. Configure the Build
+Generate build files using CMake:
 ```bash
 cmake -B build
 ```
 
-### 2. Build the Application
-Compile the project:
+### 2. Compile the Project
+Build the binary executable:
 ```bash
 cmake --build build
 ```
 
-### 3. Run the Executable
+### 3. Run Executable
 Execute the built binary:
 
 - **Windows**:
