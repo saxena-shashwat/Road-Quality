@@ -215,12 +215,5 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# End of https://www.toptal.com/developers/gitignore/api/python,matlab,opencv
 
-Adobe Acrobat
-
-
-Summarize this
-
-
-Ask AI Assistant
+.vscode/
